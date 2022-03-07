@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Internal CSS Example</title>
+    <style>
+      div div {
+        color: red;
+        font-size: 48px;
+      }
+
+      #firstDiv {
+        color: blue;
+      }
+
+      .highlight {
+        background-color: yellow;
+      }
+
+      .card {
+        border: 1px solid black;
+        border-radius: 24px;
+        /* offset-x, offset-y, blur-radius, spread-radius */
+        box-shadow: -2px -4px 24px 12px rgba(0, 0, 255 ,0.5);
+        margin: 24px;
+        margin-bottom: 500px;
+        padding: 36px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      How much does the earth cost? Im going to buy the entire earth and be king.
+    </div>
+
+
+    <div id="firstDiv" class="card">
+      This is my first interally styled div
+    </div>
+    <div>This is a div</div>
+    <div class="highlight card">
+      This is ALSO another div
+    </div>
+    <div class="highlight">
+      This is NOT ANOTHER div
+    </div>
+
+  </body>
+</html>
