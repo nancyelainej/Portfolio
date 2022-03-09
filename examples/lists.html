@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>List Examples</title>
+    <style>
+      #What {
+        list-style-type: circle;
+      }
+      #What li a {
+        color: purple;
+      }
+      #What li:first-child {
+        color: blue;
+      }
+
+      #myNavBar ul {
+        background: linear-gradient(purple, blue, pink);
+        list-style-type: none;
+        padding-inline-start: 0px;
+      }
+
+      #myNavBar ul li {
+        display: inline-block;
+        padding: 12px 24px;
+      }
+      #myNavBar ul li:hover {
+        background: linear-gradient(to left, purple,  pink);
+      }
+      #myNavBar ul li:active {
+        background: linear-gradient(to left, yellow, pink);
+      }
+
+      #cta {
+        float: right;
+      }
+
+    </style>
+  </head>
+  <body>
+    <nav id="myNavBar">
+    <ul>
+      <li>Home</li>
+      <li>Gallery</li>
+      <li>About Me</li>
+      <li id="cta">More Extra Stuff</li>
+    </ul>
+    </nav>
+    <ol>
+      <li><a href="index.hmtl">Nancy</a></li>
+      <li><a href="index.hmtl">Nance</a></li>
+      <li><a href="index.hmtl">Nance</a></li>
+    </ol>
+
+    <ul id="What">
+      <li>Nice</li>
+      <li>Neat</li>
+      <li>Nervous</li>
+    </ul>
+
+  </body>
+</html>
