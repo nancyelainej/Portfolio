@@ -12,7 +12,6 @@
     #CDBS li:first-child {
       color: white;
     }
-
     #myNavBar ul{
       background: linear-gradient(purple, blue, red, yellow);
       list-style-type: none;
@@ -30,11 +29,25 @@
   #myNavBar ul li:active {
     background: linear-gradient(to left, yellow, pink);
     }
-
+    #colors {
+      list-style-type: circle;
+    }
+    #colors li:first-child {
+        color: purple;
+    }
+    #colors li:nth-child(2) {
+        color: blue;
+    }
+    #colors li:nth-child(3) {
+        color: red;
+    }
+    #colors li:nth-child(4) {
+      color: yellow;
+    }
     #cta {
       float: right;
     }
-    <ol> 
+    <ol>
     </style>
     </head>
   </body>
@@ -52,5 +65,12 @@
       <li><a href="index.html">Red Birds</a></li>
       <li><a href="index.html">Yellow Snakes</a></li>
     </ol>
+
+    <ul id="colors">
+      <li>Purple</li>
+      <li>Blue</li>
+      <li>Red</li>
+      <li>Yellow</li>
+    </ul>
 </body>
 </html>
