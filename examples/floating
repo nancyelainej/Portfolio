@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>floating</title>
+    <style>
+      #floatleft {
+      background: skyblue;
+      display: inline-block;
+      float: left;
+      margin: 8px
+      }
+
+      #floatright {
+      background: red;
+      display: inline-block;
+      float: right;
+      margin: 8px;
+      }
+
+      #clear {
+      clear: both;
+      }
+    </style>
+    </head>
+    <body>
+    <div id="floatleft">This is left</div>
+    <div id=
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+<div class="header">
+<h1>Using ONLY DIVS</h1>
+</div>
+
+
+
+
+</body>
+</html>
