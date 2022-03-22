@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
   <head>
   <meta charset="utf-8">
@@ -105,7 +105,7 @@
 </style>
 
 <style>
-.flexChild {
+.flexChild2 {
   background-color:lavender;
   border: 2px solid grey;
   box-sizing: border-box;
@@ -116,29 +116,29 @@
   padding: 8px 14px;
   width: 50px;
 }
-.flexChildWide {
+.flexChildWide2 {
   text-align: center;
   width: 50px;
 
 }
-.flexChildTall {
+.flexChildTall2 {
   height: 100px;
   padding-top: 50px;
 
 }
-.flexChildGiant {
+.flexChildGiant2 {
   height: 200px;
   padding-top: 100px;
 
 }
-.flexContainer {
+.flexContainer2 {
   background-color: darksalmon;
   border-radius: 4px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-end;
-  align-items: end;
+  align-items: baseline;
 
 }
 
@@ -149,11 +149,115 @@
 
 <body>
 
-<div class="flexContainer">
-<div class="flexChild">1</div>
-<div class="flexChild flexChildWide flexChildGiant">2</div>
-<div class="flexChild flexChildTall">3</div>
-<div class="flexChild flexChildWide">4</div>
+<div class="flexContainer2">
+<div class="flexChild2">1</div>
+<div class="flexChild2 flexChildWide2 flexChildGiant2">2</div>
+<div class="flexChild2 flexChildTall2">3</div>
+<div class="flexChild2 flexChildWide2">4</div>
+
+
+</body>
+<style>
+.flexChild3 {
+  background-color:lavender;
+  border: 2px solid grey;
+  box-sizing: border-box;
+  font-size: 24px;
+  font-weight:bold;
+  height:50px;
+  margin:10px;
+  padding: 8px 14px;
+  width: 50px;
+}
+.flexChildWide3 {
+  text-align: center;
+  width: 50px;
+
+}
+.flexChildTall3 {
+  height: 100px;
+  padding-top: 50px;
+
+}
+.flexChildGiant3 {
+  flex-grow: 2;
+
+}
+.flexContainer3 {
+  background-color: darksalmon;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+
+}
+
+</style>
+
+
+
+
+<body>
+
+<div class="flexContainer3">
+<div class="flexChild3">1</div>
+<div class="flexChild3 flexChildWide3 flexChildGiant3">2</div>
+<div class="flexChild3 flexChildTall3">3</div>
+<div class="flexChild3 flexChildWide3">4</div>
+
+
+</body>
+<style>
+.flexChildLast {
+  background-color:lavender;
+  border: 2px solid grey;
+  box-sizing: border-box;
+  font-size: 24px;
+  font-weight:bold;
+  height:50px;
+  margin:10px;
+  padding: 8px 14px;
+  width: 50px;
+}
+.flexChildWideLast {
+  text-align: center;
+  width: 50px;
+
+}
+.flexChildTallLast {
+  height: 100px;
+  padding-top: 50px;
+
+}
+.flexChildGiantLast {
+  flex-grow: 2;
+
+}
+.flexContainerLast {
+  background-color: darksalmon;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+
+}
+
+</style>
+
+
+
+
+<body>
+
+<div class="flexContainerLast">
+<div class="flexChildLast">1</div>
+<div class="flexChildLast flexChildWideLast flexChildGiantLast">2</div>
+<div class="flexChildLast flexChildTallLast">3</div>
+<div class="flexChildLast flexChildWideLast">4</div>
 
 
 </body>
