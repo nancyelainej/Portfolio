@@ -1,0 +1,37 @@
+<html lang="en-US">
+  <head>
+    <title>Home</title>
+    <style>
+    @media screen and (min-width: 800px){
+
+    }
+    #header {
+      background-color: skyblue;
+      padding: 12px 48px;
+    }
+    #smallScreen
+    #mediumScreen
+    #largeScreen {
+      padding: 48px;
+    }
+    #footer {
+    background-color: lavender;
+    padding: 12px 48px;
+    }
+    </style>
+    </head>
+    <body>
+    <div id="header">
+      <h1>HEADER</h1>
+    </div>
+    <div id="largeScreen">
+      <h2>great than 800px</h2>
+    </div>
+    <div id="mediumScreen">
+      <h3>less than 800px</h3>
+    </div>
+    <div id="smallScreen"
+      <h4>dissapear</h4>
+    </div>
+
+    </body>
