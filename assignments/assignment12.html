@@ -50,32 +50,53 @@
 
       /* your CSS for tablet goes in here */
       @media screen and (min-width: 480px) and (max-width: 799px) {
-        <style>
-        body {
-          margin: 0;
-          font-family: Verdana, sans-serif;
-        }
-        header,
-        footer {
-          background-color: skyblue;
-          padding: 12px 24px;
+        .fakeLink {
+          background: linear-gradient(to bottom, cornflowerblue, darkslateblue);
+          box-sizing: border-box;
+          color: white;
+          cursor: pointer;
+          padding: 12px;
           text-align: center;
         }
-
-
-
-        </style>
-
-
-
-
-
-
-      /* your CSS for desktop goes in here */
-      @media screen and (min-width: 800px) {
+        .fakeLink2 {
+          background: linear-gradient(to bottom, yellow, goldenrod);
+          box-sizing: border-box;
+          color: white;
+          cursor: pointer;
+          padding: 50px;
+          text-align: center;
+        }
+        .fakeLink {
+          wdith: 480px;
+          padding: 50px;
+        }
 
       }
 
+      /* your CSS for desktop goes in here */
+      @media screen and (min-width: 800px) {
+        .fakeLink {
+          background: linear-gradient(to bottom, cornflowerblue, darkslateblue);
+          box-sizing: border-box;
+          color: white;
+          cursor: pointer;
+          padding: 22px;
+          text-align: center;
+        }
+        .fakeLink2 {
+          background: linear-gradient(to bottom, yellow, goldenrod);
+          box-sizing: border-box;
+          color: white;
+          cursor: pointer;
+          padding: 40px;
+          text-align: center;
+        }
+        .fakeLink {
+          wdith: 800px;
+          padding: 50px;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- DO NOT TOUCH THE HTML BELOW -->
