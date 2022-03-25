@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>MyGrids</title>
+    <style>
+      .myOwnGrid {
+        display: grid;
+        grid-template-columns: 1fr 200px 1fr;
+        grid-template-areas:
+      }
+      .header {
+        background-color: lavender;
+        padding: 36px;
+        grid-column: 1/4;
+        grid-row: 1;
+      }
+      .nav {
+        background-color: pink;
+        padding: 36px;
+        grid-column: 1/4;
+        grid-row: 2;
+      }
+      .content {
+        padding: 36px;
+        grid-column: 1/4;
+        grid-row: 3;
+      }
+      .block {
+        padding: 20px;
+      }
+      .block1 {
+        background-color: yellow;
+        grid-column: 1 / 4;
+      }
+      .block2 {
+        background-color: lightblue;
+      }
+      .block3 {
+        background-color: lavender;
+      }
+      .block4 {
+        background-color: yellow;
+      }
+      .block5 {
+        background-color: lightblue;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+  <div class="myOwnGrid">
+    <div class="header">
+      <h1>Graphic Designer</h1>
+      </div>
+    <div class="nav">
+      Name is Nancy
+      </div>
+      <div class="content">
+        <div class="footer">
+          cool stuff!
+        </div>
+      <div>
+        Enjoy my page!!
+      </div>
+  <div class="block block1">Extra
+  </div>
+  <div class="block block2">Home</div>
+  <div class="block block3">Gallery</div>
+  <div class="block block4">About Me</div>
+  <div class="block block5">Contact</div>
+  </div>
+    </div>
+  </body>
