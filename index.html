@@ -6,12 +6,15 @@
       body {
         text-align: center;
       }
-      div {
-        backgrond: pink;
-        border: 1px solid black;
-        margin: 8px;
-        padding: 8px;
+      #header {
+        background: black;
       }
+      #nav {
+        background: linear-gradient(black, pink);
+        padding: 20px;
+        color: white;
+      }
+
       #NavBar ul li {
         background: linear-gradient(black, pink);
         list-style-type: none;
@@ -29,7 +32,14 @@
       }
       #imgcon [
         text-align: center;
-      ]
+      #article {
+        background: black;
+        display: inline-block;
+        padding: 24px;
+        width: 52%;
+      }
+
+
       </style>
   </head>
   <body>
@@ -43,9 +53,15 @@
     </nav>
     <h1>Hello!</h1>
     <h1>I Am <i>Nancy</i></h1>
-    <div>
-      Graphic Designer & Web Designer
-    </div>
+
+    <nav id="nav">Get ready to see new <b>CONTENT</b> from me!
+    </nav>
+    <main id="main">
+    <article id="article">
+      <h1>Custom Logos and more!</h1>
+    </article>
+    </main>
+
 
   </body>
 </html>
