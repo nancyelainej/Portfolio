@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Animation</title>
+    <style>
+      @keyframes toRed {
+        0%, 100% {
+          color: black;
+        }
+        50% {
+          color: lavender;
+          transform: scale(2);
+        }
+        }
+      #animation1:hover {
+        animation: toRed 1s infinite;
+      }
+      #box {
+        box-sizing: border-box;
+        height: 200px;
+        width: 200px;
+        background-color: blue;
+        animation: toCircle 5s infinite ease-in-out;
+      }
+      @keyframes toCircle {
+        0%, 100% {
+          background-color: yellow;
+          border-radius: 0px;
+        }
+        25% {
+          border-radius: 50% 0% 50% 75%;
+        }
+        50% {
+          background-color: pink;
+          border-radius: 100%;
+        }
+        75% {
+          transform: translateX(400px) rotate(1900deg);
+        }
+      }
+        #kitty {
+          margin-top: 200px;
+          height: 200px;
+          animation: bounce 5s infinite;
+        }
+        @keyframes bounce {
+          0%, 100% {
+            transform: translate(0, 0);
+          }
+          10%, 30%, 50% {
+            transform: translateY(-200px);
+          }
+          20%, 40%, 60% {
+            transform: translateY(0px);
+          }
+          75% {
+            transform: translateX(400px);
+          }
+        }
+      }
+      </style>
+    </head>
+    <body>
+      <h1 id="animation1">basic animation.</h1>
+      <div id="box"></div>
+      <img id="kitty" src="../images/cats.jpg" />
+    </body>
+  </html>

@@ -6,14 +6,6 @@
       body {
         text-align: center;
       }
-      #header {
-        background: black;
-      }
-      #nav {
-        background: linear-gradient(black, pink);
-        padding: 20px;
-        color: white;
-      }
 
       #NavBar ul li {
         background: linear-gradient(black, pink);
@@ -30,15 +22,52 @@
       #NavBar ul li:hover {
         background: linear-gradient(to left, pink, pink);
       }
-      #imgcon [
-        text-align: center;
-      #article {
-        background: black;
-        display: inline-block;
-        padding: 24px;
-        width: 52%;
+      aside {
+        display: flex;
+        flex-direction: column;
       }
+      .fakeLink {
+        background: linear-gradient(to right, pink, black);
+        box-sizing: border-box;
+        color: white;
+        cursor: pointer;
+        padding: 3px;
+        text-align-center;
+      }
+      .fakeLink2 {
+        background: linear-gradient(to left, black, pink, lightpink);
+        box-sizing: border-box;
+        color: white;
+        cursor: pointer;
+        padding: 20px;
+        text-align-center;
+      }
+      .fakeLink3 {
+        background: linear-gradient(to right, black, pink, lightpink);
+        box-sizing: border-box;
+        color: white;
+        cursor: pointer;
+        padding: 20px;
 
+      }
+      .fakeLink:hover,
+      .fakeLink2:hover,
+      .fakeLink3:hover {
+        opacity: 80%;
+      }
+      @media screen and (max-width: 480px) {
+        aside {
+          flex-wrap: wrap;
+          flex-direction: row;
+        }
+        aside .fakeLink {
+        flex-basis: 50%;
+      }
+      aside .fakeLink2 {
+      flex: 1;
+      padding: 30px;
+    }
+      }
 
       </style>
   </head>
@@ -53,14 +82,12 @@
     </nav>
     <h1>Hello!</h1>
     <h1>I Am <i>Nancy</i></h1>
+    <aside>
+    <div class="fakeLink">What do i do?</div>
+    <div class="fakeLink2">Logos</div>
+    <div class="fakeLink3">Websites</div>
 
-    <nav id="nav">Get ready to see new <b>CONTENT</b> from me!
-    </nav>
-    <main id="main">
-    <article id="article">
-      <h1>Custom Logos and more!</h1>
-    </article>
-    </main>
+
 
 
   </body>
