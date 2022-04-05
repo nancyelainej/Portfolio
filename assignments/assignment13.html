@@ -5,25 +5,25 @@
     <style>
       .myOwnGrid {
         display: grid;
-        grid-template-columns: 1fr 200px 1fr;
+        grid-template-columns: 1fr 200px 200px 200px 1fr;
         grid-template-areas:
       }
       .header {
         background-color: lavender;
         padding: 36px;
-        grid-column: 1/4;
+        grid-column: 1/6;
         grid-row: 1;
       }
       .nav {
         background-color: pink;
         padding: 36px;
-        grid-column: 1/4;
+        grid-column: 1;
         grid-row: 2;
       }
       .content {
         padding: 36px;
-        grid-column: 1/4;
-        grid-row: 3;
+        grid-column: 2/6;
+        grid-row: 2;
       }
       .block {
         padding: 20px;
@@ -44,6 +44,11 @@
       .block5 {
         background-color: lightblue;
       }
+      #sidenav {
+        background: pink;
+        display: inline-block;
+        width: 50%
+      }
     </style>
 
   </head>
@@ -61,6 +66,7 @@
         <div class="footer">
           cool stuff!
         </div>
+        <aside id="sidenav">HELLO</aside>
       <div>
         Enjoy my page!!
       </div>

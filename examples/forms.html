@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>forms</title>
+    <style>
+    #firstNameContainer label,
+    #lastNameContainer label {
+      display: block;
+    }
+    #firstNameContainer {
+      margin-bottom: 12px;
+    }
+    #firstNameContainer input {
+      border: 2px dashed red;
+      border-bottom: 2px dashed red;
+      padding: 12px;
+    }
+    #firstNameContainer input:focus-visible {
+      outline: 5px solid blue;
+    }
+
+    #lastNameContainer input {
+      background-color: skyblue;
+      border: 0;
+      padding: 12px;
+    }
+    #lastNameContainer input:focus-visible {
+      outline: 0;
+    }
+
+    textarea {
+      font-family: Verdana, sans-serif;
+      font-size: 20px;
+      width: 500px;
+    }
+    #buttonContainer input [type=button] {
+      border: 1px solid black;
+      border-radius: 6px;
+      cursor: pointer;
+      padding: 12px;
+      margin-right: 12px;
+    }
+    #buttonContainer input{type=reset} {
+      background: linear-gradient(to bottom, pink, black);
+      border: 1px
+    }
+    </style>
+    </head>
+    <body>
+      <form action="submission_action.php">
+      <h2>Text Inputs</h2>
+      <div id="firstNameContainer">
+        <div>
+        <label for="firstNameInput">First Name</label>
+        <input type="text" id="firstNameInput" name="firstName">
+        </div>
+        <div>
+        <div id="lastNameContainer">
+        <label for="lastNameInput">Last Name</label>
+        <input type="text" id="lastNameInput" name="lastName">
+        </div>
+        <h2>TextArea Inputs</h2>
+        <div>
+          <label for=codeFeelingsId>How do you feel about PROGRAMMING? </label>
+          <br>
+          <textarea id="codeFeelingsId" rows="5"></textarea>
+        <h2>Radio Inputs</h2>
+        <p>What F.I.R.S.T program are you in?</p>
+        <div>
+        <input type="radio" id="raspRadio" name="program" value="rasp">
+        <label for="raspRadio"> Recording Arts and Show Production
+        </label>
+        </div>
+        <div>
+        <input type="radio" id="dfvpRadio" name="program" value="dfvp">
+        <label for="dfvpRadio"> Digital Filmmaking and Video Productions
+        </label>
+        </div>
+        <div>
+        <input type="radio" id="gdwdRadio" name="program" value="gdwd">
+        <label for="gdwdRadio"> Graphic Design and Web Development
+        </label>
+        </div>
+        <h2>Checkbox Inputs</h2>
+        <p>how to be cool at school</p>
+        <div>
+        <input
+          type="Checkbox"
+          id="bedCheckbox"
+          name="vehicleOption4"
+          value="dont"
+          >
+          <label for="busCheckbox">dont</label>
+          </div
+          <div>
+            <label for="dateId">What is your birthday?</label>
+            <input type="date" id="dateId" name="bday">
+            </div>
+            <h2>Dropdown (select) Inputs</h2>
+            <div>
+              <label for="foodGroupId">What is your fav food group?</label>
+              <select id="foodGroupId" name="foodGroup">
+                <option value="">--Select an option--</option>
+                <option value="fruits">Fruits</option>
+                <option value="Veggies">Veggies</option>
+                <option value="Meats">Meats</option>
+                <option value="Grains">Grains</option>
+                <option value="Dairy">Dairy</option>
+              </select>
+              </div>
+              <h2>Button Input</h2>
+              <div>
+                <input type="button" value="Click Me!">
+                <input type="reset"  value="Click to Reset">
+                <input type="submit" value="Submit">
+            </div>
+            <div id="buttonContainer" >
+            </div>
+
+      </form>
+    </body>
+  </html>
