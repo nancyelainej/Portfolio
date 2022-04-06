@@ -7,12 +7,34 @@
 
 
 
-
     </head>
     <body>
+      <form action="submission_action.php" >
+      <h2>What is your Imaginary name?</h2>
+      <div id="ImaginaryFirstName">
+      <div>
+      <label for="ImaginaryFirstNameInput">First Name</label>
+      <input type="text" id="ImaginaryFirstNameInput" name="First Name">
+    </div>
+    <div id="ImaginaryLastName">
+    <div>
+    <label for="ImaginaryLastNameInput">Last Name</label>
+    <input type="text" id="ImaginaryLastNameInput" name="Last Name">
+  </div>
+  <h2>What section do you think your Imaginary name fits in?</h2>
+  <div>
+  <input type="radio" id="FantasyRadio" name="choice" value="Fantasy" >
+  <label for="FantasyRadio"> Fantasy </label>
+  </div>
+  <input type="radio" id="HorrorRadio" name="choice" value="Horror">
+  <label for="raspRadio"> Horror </label>
+  </div>
+  <input type="radio" id="RomanceRadio" name="choice" value="Romance">
+  <label for="raspRadio"> Romance </label>
+  </div>
+  <div>
+    <input type="submit" value="Submit" >
+  </div>
 
 
-
-
-    </body>
-    </html>
+</form>
