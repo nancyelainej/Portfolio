@@ -54,6 +54,16 @@ aside {
     background-position: right bottom;
     background-repeat: no-repeat;
 }
+#nextAppearance h3,
+#nextPublication h3 {
+  color: white;
+}
+#nextPublication {
+    background-image: url("../images/releases-bg.jpg");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+
 footer {
   grid-area: footer;
 }
