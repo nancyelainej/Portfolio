@@ -80,13 +80,13 @@ footer {
   grid-auto-rows: minmax(50px, auto);
   grid-template-areas:
 
-  "header header header "
-  " nav  nav  nav "
-  " banner banner banner "
-  " cards cards cards "
-  "sidenav blog blog "
-  " footer footer footer "
-  " bottom bottom bottom ";
+  ".header header header."
+  ".nav  nav  nav."
+  ".banner banner banner. "
+  ".cards cards cards. "
+  ".sidenav blog blog. "
+  " .footer footer footer. "
+  " .bottom bottom bottom. ";
 }
 
 
