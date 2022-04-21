@@ -48,9 +48,26 @@
     <div id="GDWD" >
       <b>Graphic Designer & Web Designer</b>
     </div>
-    <div>
-      ABOUT ME
+    <h1>Get to know about me!</h1>
+
+    <div class="popupTrigger">Click here to know about me!
+
+    <div id="popupContainer" >
+      <div id="popupBackground" class="closePopup"></div>
+      <div id="popup">
+        <div>Graphic Designer who is highly creative with experience in print design,
+           marketing, typography, coding and motion graphics.
+         </div>
+        <div class="closePopup">Close</div>
+      </div>
     </div>
+
+    <script type="text/javascript">
+    $(.'popupTrigger').click)
+      function() {
+        $('#popupContainer').addClass('popupOpen');
+      }
+    );
 
 
   </body>
